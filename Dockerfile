@@ -12,6 +12,7 @@ RUN apt-get -qq update && apt-get -qq install -y --no-install-recommends \
     python3-pip \
     dpkg-dev \
     gcc \
+    gnupg \
     libbluetooth-dev \
     libbz2-dev \
     libc6-dev \
