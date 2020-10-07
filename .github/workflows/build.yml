@@ -1,0 +1,15 @@
+name: openubot docker
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: build and upload to dockerhub
+      uses: elgohr/Publish-Docker-Github-Action@master
+      with:
+        name: aarunalr/repository
+        username: ${{ secrets.DOCKER_USERNAME }}
+        password: ${{ secrets.DOCKER_PASSWORD }}
+        tags: userbot
