@@ -9,7 +9,7 @@ jobs:
     - name: build and upload to dockerhub
       uses: elgohr/Publish-Docker-Github-Action@master
       with:
-        name: aarunalr/userbot
+        name: aarunalr/openubot
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
         tags: userbot
